@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery demo!</title>
+  <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type = "text/javascript">
+    $(document).ready(function(){
+      $('h4').click(function(){
+        alert('It works!');
+      })
+      $( "#clickme" ).click(function() {
+      $( "#book" ).hide( "fast", function() {
+
+        });
+      });
+      $( "#clickme2" ).click(function() {
+        $( "#book" ).show( "fast", function() {
+
+        });
+      });
+      $("#one").click(function(){
+        $("p").toggle();
+        });
+      $( "#bookslide" ).click(function() {
+        $( "#book3" ).slideDown( "slow", function() {
+    // Animation complete.
+        });
+      });
+      $( "#clickme1" ).click(function() {
+        $( "#book1" ).fadeOut( "slow", function() {
+    // Animation complete
+      });
+      });
+      $( "#show" ).click(function() {
+        $( "#book1" ).fadeIn( "slow", function() {
+    });
+  });
+});
+
+    </script>
+</head>
+<body>
+    <h1>Click function<h1>
+      <h4>Click me!</h4>
+      <h4>Click me too!</h4>
+      <hr />
+    <h1>Hide/Show</h1>
+      <div id="clickme">
+        Click here to hide!
+      </div>
+      <img id="book" src="book.png" alt="" width="100" height="123">
+      <div id="clickme2">
+        Click to show!
+      </div>
+      <hr/>
+      <div id="toggle">
+        <h1>Toggle</h1>
+        <button id="one">Click here to toggle text paragraph</button>
+        <p>Hide this paragraph with the button above!</p>
+        <hr />
+      </div>
+      <div id ="bookslide">
+        <button id = "bookslide">CLick here to slidedown</button>
+          <img id="book3" src="book.png" alt="" width="100" height="123">
+        <br>
+        <br>
+        <hr />
+        <div id="clickme1">
+          Click here to fadeOut
+          <img id="book1" src="book.png" alt="" width="100" height="123">
+        </div>
+        <div id="show">
+          Click to fadein
+        </div>
+
+
+</body>
+
+
+</html>
